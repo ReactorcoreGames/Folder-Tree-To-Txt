@@ -1,0 +1,74 @@
+Folder Tree To Txt
+
+Save time with this free, user-friendly tool. No command line knowledge required!
+
+This lightweight batch program creates a comprehensive text file of your folder structure with just one click. 
+
+Simply place the .bat file in your desired starting folder and run it. Instantly, you'll get a FolderTree.txt with all the root folder's filenames with extensions listed, including any subfolder names and their filenames under them too!
+
+The result looks like this:
+
+<EXAMPLE>
+ROOT FOLDER
+|   
++---gostek_down (Subfolder inside the root folder.)
+|   \---Gundam (Subfolder inside the above subfolder.)
+|       |   legs_L.bmp
+|       |   legs_L_shad.bmp
+|       |   legs_R.bmp
+|       |   legs_R_shad.bmp <--- files with their extensions inside this particular subfolder.
+|       |   
+|       \---gostek-gfx (Even deeper nested subfolder!)
+|           |   biodro.bmp
+|           |   biodro2.bmp
+|           |   noga.bmp
+|           |   noga2.bmp
+|           |   stopa.bmp
+|           |   stopa2.bmp
+|           |   udo.bmp
+|           |   udo2.bmp
+|           |   
+|           \---ranny (Even more deeper subfolder!!)
+|                   biodro.bmp
+|                   biodro2.bmp
+|                   noga.bmp
+|                   noga2.bmp
+|                   udo.bmp
+|                   udo2.bmp
+|                   
+\---gostek_heads (Subfolder inside the root folder.)
+    |   blank.bmp
+    |   pic.bmp
+    |   
+    \---Humanoidal (and so on.)
+        |   selected.txt 
+        |   selected2.txt 
+        |   
+        \---Default
+                badge.bmp
+                badge2.bmp
+                cygaro.bmp
+                cygaro2.bmp
+                head.bmp
+                head_shad.bmp
+                last.txt 
+                pic.bmp
+                selected.txt 
+                selected2.txt
+</EXAMPLE>
+
+Very useful if you want an overview of a convoluted folder tree that is too bothersome to click through in the file explorer one-by-one and you don't want to deal with complex third party folder tree explorer software or have to deal with CLI nonsense where you need to memorize commands and manually type them out each time.
+
+Just copy the .bat into whatever folder you want to "unravel", run it, get a FolderTree.txt from it and you're done!
+
+Perfect for:
+- You can then get a neat overview of the entire folder tree.
+- You can share it with friends or AI GPTs to let them understand the folder setups you have.
+- Easily create folder tree documention to help you plan out a project and keep track of your files inside endless subfolders.
+
+
+Enjoy!
+
+
+Created by Reactorcore:
+https://reactorcore.itch.io/

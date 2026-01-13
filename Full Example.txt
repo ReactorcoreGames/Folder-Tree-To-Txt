@@ -1,0 +1,139 @@
+Example of what the 'FolderStructureInfoDumper.bat' does:
+==
+1. Copy and place it in a folder you want it to start from.
+2. Run it.
+3. A new 'FolderTree.txt' file will appear in that folder that looks like the below example. Open it with notepad++ or similar.
+
+What you get is the names of every subfolder as deep as it goes, with every file that is listed inside each individual subfolder, getting their name and file extension.
+
+Very useful if you want an overview of a convoluted folder tree that is too bothersome to click through in the file explorer and you don't want to deal with complex software or use the CMD/Terminal to get this information.
+
+I also found it useful to get a handy pattern that I can feed to an AI like Claude or ChatGPT if I want them to understand a folder structure for a project I'm working on.
+
+--
+
+To reiterate: Ideally, you go copy and paste the 'FolderStructureInfoDumper.bat' from the original unzipped install folder, get your data by running it and then delete the .bat file afterward (keep the original one in the folder you copied it from though). Then do whatever you want with the resulting 'FolderTree.txt' file.
+
+--
+
+Example result of the created 'FolderTree.txt' file that this .bat produces after it runs:
+==
+
+ROOT FOLDER
+|   
++---gostek_down
+|   \---Gundam
+|       |   legs_L.bmp
+|       |   legs_L_shad.bmp
+|       |   legs_R.bmp
+|       |   legs_R_shad.bmp
+|       |   
+|       \---gostek-gfx
+|           |   biodro.bmp
+|           |   biodro2.bmp
+|           |   noga.bmp
+|           |   noga2.bmp
+|           |   stopa.bmp
+|           |   stopa2.bmp
+|           |   udo.bmp
+|           |   udo2.bmp
+|           |   
+|           \---ranny
+|                   biodro.bmp
+|                   biodro2.bmp
+|                   noga.bmp
+|                   noga2.bmp
+|                   udo.bmp
+|                   udo2.bmp
+|                   
++---gostek_heads
+|   |   blank.bmp
+|   |   pic.bmp
+|   |   
+|   \---Humanoidal
+|       |   selected.txt 
+|       |   selected2.txt 
+|       |   
+|       \---Default
+|           |   badge.bmp
+|           |   badge2.bmp
+|           |   cygaro.bmp
+|           |   cygaro2.bmp
+|           |   head.bmp
+|           |   head_shad.bmp
+|           |   last.txt 
+|           |   pic.bmp
+|           |   selected.txt 
+|           |   selected2.txt
+|           |   
+|           +---1    
+|           |   \---UNNAMED HAIRSTYLE 1
+|           |           hair1.bmp
+|           |           hair12.bmp
+|           |           pic.bmp
+|           |           
+|           +---2    
+|           |   \---UNNAMED HAIRSTYLE 2
+|           |           hair2.bmp
+|           |           hair22.bmp
+|           |           pic.bmp
+|           |           
+|           +---3     
+|           |   \---UNNAMED HAIRSTYLE 3
+|           |           hair3.bmp
+|           |           hair32.bmp
+|           |           pic.bmp
+|           |           
+|           +---4
+|           |   \---UNNAMED HAIRSTYLE 4
+|           |           hair4.bmp
+|           |           hair42.bmp
+|           |           pic.bmp
+|           |           
+|           +---helm    
+|           |   \---UNNAMED HELM
+|           |           helm.bmp
+|           |           helm2.bmp
+|           |           pic.bmp
+|           |           
+|           +---kap      
+|           |   \---UNNAMED HAT
+|           |           kap.bmp
+|           |           kap2.bmp
+|           |           pic.bmp
+|           |           
+|           \---morda 
+|               \---UNNAMED FACE
+|                       morda.bmp
+|                       morda2.bmp
+|                       pic.bmp
+|                       
+\---gostek_top
+    \---Gundam
+        |   class.txt
+        |   top_L.bmp
+        |   top_L_shad.bmp
+        |   top_R.bmp
+        |   top_R_shad.bmp
+        |   
+        \---Gostek-gfx
+            |   cygaro.bmp
+            |   cygaro2.bmp
+            |   dlon.bmp
+            |   dlon2.bmp
+            |   kamizelka.bmp
+            |   kamizelka2.bmp
+            |   klata.bmp
+            |   klata2.bmp
+            |   ramie.bmp
+            |   ramie2.bmp
+            |   reka.bmp
+            |   reka2.bmp
+            |   
+            \---ranny
+                    klata.bmp
+                    klata2.bmp
+                    ramie.bmp
+                    ramie2.bmp
+                    reka.bmp
+                    reka2.bmp
