@@ -1,6 +1,7 @@
 # Folder Tree to Txt
 
-Use the web app version instantly here: https://reactorcore.itch.io/folder-tree-to-txt
+- Webapp Mirror 1: https://reactorcoregames.github.io/Folder-Tree-To-Txt/
+- Webapp Mirror 2: https://reactorcore.itch.io/folder-tree-to-txt
 
 ![folder tree to txt 0 itch](https://github.com/user-attachments/assets/db0a1f4a-9493-4efe-9f93-28545ecc411c)
 
