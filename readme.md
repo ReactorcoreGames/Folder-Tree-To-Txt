@@ -1,5 +1,9 @@
 # Folder Tree to Txt
 
+Use the web app version instantly here: https://reactorcore.itch.io/folder-tree-to-txt
+
+![folder tree to txt 0 itch](https://github.com/user-attachments/assets/db0a1f4a-9493-4efe-9f93-28545ecc411c)
+
 Save time with this free, user-friendly tool. No command line knowledge required!
 
 This lightweight tool creates a comprehensive text file of your folder structure with just one click.
@@ -8,6 +12,9 @@ This lightweight tool creates a comprehensive text file of your folder structure
 
 ### 🌐 Web App Version (Recommended)
 **Cross-platform • Works on any OS • Modern interface**
+
+<img width="1162" height="846" alt="web app version screenshot" src="https://github.com/user-attachments/assets/9405f7d0-530e-4eee-815b-066bb3e1dfbf" />
+
 
 Simply open the HTML file in your browser, select a folder, and instantly get a visual tree structure that you can download as `FolderTree.txt` or copy to clipboard.
 
@@ -21,6 +28,9 @@ Simply open the HTML file in your browser, select a folder, and instantly get a 
 
 ### 💻 Batch File Version
 **Windows only • Classic simplicity**
+
+<img width="527" height="631" alt="folder tree to txt 1" src="https://github.com/user-attachments/assets/9ef3e225-df9f-4bec-8ec2-3b8173bd1d21" />
+
 
 Place the `.bat` file in your desired folder and run it. A `FolderTree.txt` file will be created instantly in the same location.
 
