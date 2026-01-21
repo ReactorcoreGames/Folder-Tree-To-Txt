@@ -13,12 +13,27 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(90deg,
+                #2d5016 0%,
+                #4a7c30 50%,
+                #2d5016 100%);
+            background-size: 200% 100%;
+            animation: gradientFlow 9s linear infinite;
             min-height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 20px;
+        }
+
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 200% 0%;
+            }
         }
 
         .container {
@@ -43,7 +58,7 @@
         }
 
         button {
-            background: #667eea;
+            background: #4a7c30;
             color: white;
             border: none;
             padding: 12px 30px;
@@ -55,16 +70,17 @@
             margin-bottom: 10px;
         }
 
-        button:hover {
-            background: #5568d3;
+        button:hover:not(:disabled) {
+            background: #3a6325;
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(74, 124, 48, 0.4);
         }
 
         button:disabled {
             background: #ccc;
             cursor: not-allowed;
             transform: none;
+            opacity: 0.6;
         }
 
         #fileInput {
@@ -116,6 +132,35 @@
         .button-group {
             margin-bottom: 20px;
         }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.95);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .helper-text {
+            color: #666;
+            font-size: 13px;
+            margin-top: 10px;
+            padding: 10px;
+            background: #f0f7ed;
+            border-radius: 4px;
+            border-left: 3px solid #4a7c30;
+        }
     </style>
 </head>
 <body>
@@ -126,13 +171,21 @@
         <div class="button-group">
             <input type="file" id="fileInput" webkitdirectory directory multiple>
             <button id="selectBtn">Select Folder</button>
-            <button id="downloadBtn" style="display: none;">Download FolderTree.txt</button>
-            <button id="copyBtn" style="display: none;">Copy to Clipboard</button>
+            <button id="downloadBtn" disabled>Download FolderTree.txt</button>
+            <button id="copyBtn" disabled>Copy to Clipboard</button>
+        </div>
+
+        <div class="helper-text">
+            👆 Select a folder to generate its tree structure. Then you can download or copy the result!
         </div>
 
         <div id="status" class="status"></div>
         <div id="output"></div>
     </div>
+
+    <footer>
+        Made by <a href="https://linktr.ee/reactorcore" target="_blank" rel="noopener noreferrer">Reactorcore</a>
+    </footer>
 
     <script>
         let treeOutput = '';
@@ -212,9 +265,9 @@
                 // Display output
                 document.getElementById('output').textContent = treeOutput;
                 document.getElementById('output').classList.add('visible');
-                document.getElementById('downloadBtn').style.display = 'inline-block';
-                document.getElementById('copyBtn').style.display = 'inline-block';
-                
+                document.getElementById('downloadBtn').disabled = false;
+                document.getElementById('copyBtn').disabled = false;
+
                 showStatus(`Folder tree generated successfully! (${files.length} items)`, 'success');
             } catch (err) {
                 showStatus('Error: ' + err.message, 'error');
