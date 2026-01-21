@@ -13,8 +13,7 @@ This lightweight tool creates a comprehensive text file of your folder structure
 ### 🌐 Web App Version (Recommended)
 **Cross-platform • Works on any OS • Modern interface**
 
-<img width="1162" height="846" alt="web app version screenshot" src="https://github.com/user-attachments/assets/9405f7d0-530e-4eee-815b-066bb3e1dfbf" />
-
+<img width="1920" height="1080" alt="foldertree to txt screen (3)" src="https://github.com/user-attachments/assets/534fda03-9183-4eb6-a1c2-e78d16200c38" />
 
 Simply open the HTML file in your browser, select a folder, and instantly get a visual tree structure that you can download as `FolderTree.txt` or copy to clipboard.
 
